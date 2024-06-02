@@ -48,7 +48,7 @@ ul li a{
 }
 .section{
   margin: auto;
-  width: 70%;
+  width: 75%;
   justify-content: space-between;
 }
 .info h2{
@@ -305,9 +305,9 @@ footer{
     display: none;
   }
   .form-side{
-    width: 134%;
+    width: 125%;
     margin-top: 20px;
-    margin-left: -67px;
+    margin-left: -46px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
