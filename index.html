@@ -34,18 +34,29 @@
         <div class="form-side">
           <h4>Check Credit Worthiness?</h4>
           <form id="creditForm">
+            <div>
             <span id="nameErr"></span><br/>
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" placeholder="Enter Full Name">
+            </div>
+            <div class="mb">
             <span id="accErr"></span><br/>
             <label for="accountBalance">Current Amount in Account:</label>
             <input type="text" id="accountBalance" placeholder="Enter Account Balance" oninput="validateNumberInput(this)"><br/>
+            </div>
+            <div class="mb">
             <label for="creditHistory">6 Months Credit History (0-12):</label>
             <input type="number" id="creditHistory" required min="0" max="12"><br/>
+            </div>
+            <div class="mb">
             <label for="lastDepositDate">Last Deposit Date (Within a Month):</label>
             <input type="date" id="lastDepositDate" required>
+            </div>
+            <div class="mb">
             <label for="lastLoanCollectionDate">Last Loan Collection Date (if above 6 months):</label>
             <input type="date" id="lastLoanCollectionDate">
+            </div>
+           <div class="mb">
             <span>Loan Repayment Period</span>
             <span class="flex">
               <label for="collectionDate">Collection Date:</label>
@@ -54,6 +65,7 @@
               <label for="payoffDate">Payoff Date:</label>
               <input type="date" id="payoffDate">
             </span>
+           </div>
             <br>
             <label for="accountType">Account Operated Type:</label>
             <select id="accountType">

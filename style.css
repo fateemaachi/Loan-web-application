@@ -100,7 +100,7 @@ label{
 input{
   width: 100%;
   padding: 8px 3px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   outline: none;
 }
 span{
@@ -154,6 +154,9 @@ button{
 }
 .mr{
   margin-right: 5px;
+}
+.mb{
+  margin-bottom: 20px;
 }
 .main{
   width: 90%;
