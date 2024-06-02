@@ -288,21 +288,21 @@ footer{
     width: 100%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 414px) and (max-width: 425px) {
   nav{
    display: none;
   }
   .banner{
-    width: 113%;
-    height: 700px;
+    width: 116%;
+    height: 813px;
   }
   .info, .main, footer{
     display: none;
   }
   .form-side{
-    width: 135%;
+    width: 134%;
     margin-top: 20px;
-    margin-left: -60px;
+    margin-left: -67px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
