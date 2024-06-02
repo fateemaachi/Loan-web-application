@@ -138,6 +138,7 @@ button{
 }
 .letter-wrapper{
   width: 100%;
+  overflow: hidden;
 }
 #letterContainer{
   width: 70%;
@@ -252,6 +253,7 @@ footer{
   color: #7f7f7f;
 }
 
+
 /* @media screen and (min-width: 320px) and (max-width: 768px) {
   .info{
     display: none;
@@ -289,6 +291,9 @@ footer{
   }
 }
 @media screen and (min-width: 414px) and (max-width: 425px) {
+  .banner{
+    overflow: hidden;
+  }
   nav{
    display: none;
   }
