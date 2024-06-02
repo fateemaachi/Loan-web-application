@@ -126,8 +126,8 @@ select{
   outline: none;
 }
 button{
-  margin-left: 10px;
-  padding: 11px 30px;
+  /* margin-left: 10px; */
+  padding: 10px 30px;
   border: none;
   border-radius: 3px;
   background: #3588f0;
@@ -157,6 +157,9 @@ button{
 }
 .mb{
   margin-bottom: 20px;
+}
+.ml{
+  margin-left: 10px;
 }
 .main{
   width: 90%;
