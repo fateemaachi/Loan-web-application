@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/eba01fdb8d.js" crossorigin="anonymous"></script>
+  <title>Loan Service App</title>
+</head>
+<body>
+  <div id="block">
+    <div class="banner">
+      <nav>
+        <a href="#" class="flex align">
+          <i class="fa-solid fa-landmark mr"></i>
+        <p>Cash Bay</p>
+        </a>
+  
+        <ul class="flex">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div class="section flex">
+        <div class="info">
+          <h2>Loan Collection<br/> made easy</h2>
+          <p>We’ve simplified the process. Apply<br/> for our business loan in minutes,<br/> without painful paperwork or<br/>waiting in queues.</p>
+          <a href="#">How it works</a>
+        </div>
+        <div class="form-side">
+          <h4>Check Credit Worthiness?</h4>
+          <form id="creditForm">
+            <span id="nameErr"></span><br/>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Enter Full Name">
+            <span id="accErr"></span><br/>
+            <label for="accountBalance">Current Amount in Account:</label>
+            <input type="text" id="accountBalance" placeholder="Enter Account Balance" oninput="validateNumberInput(this)"><br/>
+            <label for="creditHistory">6 Months Credit History (0-12):</label>
+            <input type="number" id="creditHistory" required min="0" max="12"><br/>
+            <label for="lastDepositDate">Last Deposit Date (Within a Month):</label>
+            <input type="date" id="lastDepositDate" required>
+            <label for="lastLoanCollectionDate">Last Loan Collection Date (if above 6 months):</label>
+            <input type="date" id="lastLoanCollectionDate">
+            <span>Loan Repayment Period</span>
+            <span class="flex">
+              <label for="collectionDate">Collection Date:</label>
+              <input type="date" id="collectionDate">
+              <br>
+              <label for="payoffDate">Payoff Date:</label>
+              <input type="date" id="payoffDate">
+            </span>
+            <br>
+            <label for="accountType">Account Operated Type:</label>
+            <select id="accountType">
+              <option value="current">Current</option>
+              <option value="savings">Savings</option>
+            </select>
+            <button type="submit">Check</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="info2">
+        <h2>How our business loans work</h2>
+        <p>We’ve simplified the process. Apply for our<br/> business loan in minutes, without painful<br/> paperwork or waiting in queues.</p>
+      </div>
+      <div class="process flex">
+        <div class="num_grid flex justify align">
+          <div class="shape flex justify align">1</div>
+          <h2>Easy application</h2>
+          <p>Complete our online<br/> application. It’s quick, easy,<br/> and confidential</p>
+        </div>
+        <div class="num_grid flex justify align">
+          <div class="shape2 flex justify align">2</div>
+          <h2>Fast decision</h2>
+          <p>If You’re Pre-Approved, E-<br/>Sign your Application To<br/> Confirm Funds</p>
+        </div>
+        <div class="num_grid flex justify align">
+          <div class="shape3 flex justify align">3</div>
+          <h2>Get Your Cash</h2>
+          <p>Cash Deposited To Your<br/> Bank Account As Quickly As<br/> The Next Business Day.</p>
+        </div>
+        <div class="num_grid flex justify align">
+          <div class="shape4 flex justify align">4</div>
+          <h2>Repay Your Loan</h2>
+          <p>The Original Amount & The<br/> Fees Will Be Debited From<br/> Your Bank Account.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="logo-cont flex">
+        <div class="logo flex">
+          <a href="#" class="flex align">
+            <i class="fa-solid fa-landmark mr"></i>
+          <p>Cash Bay</p>
+          </a>
+          <p class="grey">You need an active Nigerian bank<br/> account to allow the money to<br/> be transferred to you.</p>
+        </div>
+       
+        <div class="link-column flex">
+          <p>COMPANY</p>
+          <a href="#">Who We Are</a>
+          <a href="#">Blog</a>
+          <a href="#">Press</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="link-column flex">
+          <p>ABOUT</p>
+          <a href="#">How It Works</a>
+          <a href="#">About Us</a>
+          <a href="#">Products</a>
+          <a href="#">Why Us</a>
+        </div>
+        <div class="link-column flex">
+          <p>PRODUCTS</p>
+          <a href="#">Construction Loans</a>
+          <a href="#">Equipment Finance</a>
+          <a href="#">Investment Loans</a>
+          <a href="#">Commercial Loans</a>
+        </div>
+      </div>
+      
+
+    </footer>
+  </div>
+  <div class="letter-wrapper flex justify align">
+    <p id="letterContainer"></p>
+  </div>
+ 
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
