@@ -307,7 +307,7 @@ footer{
   .form-side{
     width: 131%;
     margin-top: 20px;
-    margin-left: -55px;
+    margin-left: -56px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
@@ -315,16 +315,16 @@ footer{
    display: none;
   }
   .banner{
-    width: 149%;
-    height: 813px;
+    width: 154%;
+    height: 837px;
   }
   .info, .main, footer{
     display: none;
   }
   .form-side{
-    width: 135%;
+    width: 128%;
     margin-top: 55px;
-    margin-left: -60px;
+    margin-left: -59px;
   }
 }
 
